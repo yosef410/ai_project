@@ -3,7 +3,7 @@ def clean_input(text):
 
 def route(text):
     if "refund" in text or "charged" in text:
-        return "billing"
+        return "billing_refund"
     return "general"
 
 text = "I was charged twice"
