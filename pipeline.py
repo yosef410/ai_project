@@ -3,7 +3,7 @@ import json
 import logging
 import uuid
 from datetime import datetime
-
+# o my fucking god
 
 
 threshold = float(os.getenv("CONFIDENCE_THRESHOLD", 0.6))
