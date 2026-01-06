@@ -1,8 +1,12 @@
+import os
 import json
 import logging
 import uuid
 from datetime import datetime
 
+
+
+threshold = float(os.getenv("CONFIDENCE_THRESHOLD", 0.5))
 # -----------------------
 # LOGGING SETUP
 # -----------------------
@@ -46,7 +50,7 @@ def model_confidence(task: str) -> float:
 
 def system_check(task: str, confidence: float) -> dict:
     # System safety/decision layer
-    if confidence < 0.60:
+    if confidence < threshold:
         return {
             "status": "fallback",
             "message": "Need more information to help safely.",
