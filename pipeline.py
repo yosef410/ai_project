@@ -98,3 +98,4 @@ if __name__ == "__main__":
     # Final output to user (clean JSON)
     print(json.dumps(result, indent=2))
     print(f"\n(Log saved to {LOG_FILE})")
+    print("hello world")
