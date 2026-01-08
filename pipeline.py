@@ -3,10 +3,10 @@ import json
 import logging
 import uuid
 from datetime import datetime
-# how are you son
 
+# how are you son   
 
-threshold = float(os.getenv("CONFIDENCE_THRESHOLD", 0.5))
+threshold = float(os.getenv("CONFIDENCE_THRESHOLD", 0.6))
 # -----------------------
 # LOGGING SETUP
 # -----------------------
