@@ -6,7 +6,7 @@ from datetime import datetime
 
 # how are you son   
 
-threshold = float(os.getenv("CONFIDENCE_THRESHOLD", 0.6))
+threshold = float(os.getenv("CONFIDENCE_THRESHOLD", 0.5))
 # -----------------------
 # LOGGING SETUP
 # -----------------------
