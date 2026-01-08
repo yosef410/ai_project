@@ -3,14 +3,24 @@ name: CI
 on:
   push:
     branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Say hello
-        run: echo "CI is working 🎉"
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Syntax check (compile)
+        run: python -m compileall .
+
+      - name: Run tests
+        run: python -m unittest -v 
