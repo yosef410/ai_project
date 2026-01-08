@@ -14,3 +14,4 @@ jobs:
 
       - name: Say hello
         run: echo "CI is working 🎉"
+python-version: "0.0"
