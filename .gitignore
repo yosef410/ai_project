@@ -2,3 +2,6 @@
 .env
 __pycache__/
 *.pyc
+
+
+#the files we dont whant git to tack
