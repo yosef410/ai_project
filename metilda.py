@@ -7,4 +7,4 @@ def check(f):
 moral = check(hello)
 print(moral)
 print("\n")
-print("menora")
+print("feilling test")
